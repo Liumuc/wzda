@@ -1,0 +1,14 @@
+#include"bits/stdc++.h"
+using namespace std;
+int main()
+{
+	int a,minn=101,maxn;
+	for(int i=0;i<5;i++)
+    {
+		cin>>a;
+	    if(a>maxn) maxn=a;//每次输入后都判断一下是否为最大数或最小数。
+		if(a<minn) minn=a;
+	}
+	cout<<maxn*minn<<endl;
+	return 0;
+}

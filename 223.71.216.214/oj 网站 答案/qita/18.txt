@@ -1,0 +1,10 @@
+#include 
+using namespace std;
+double r; 
+int main() {   
+    cin>>r;     
+    cout<<4*3.14*r*r;
+    cout<<" ";
+    cout<<3.14*r*r*r/3*4;  
+    return 0;
+ }

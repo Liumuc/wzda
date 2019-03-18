@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>b) swap(a,b);
+    if(a>c) swap(a,c);
+    if(b>c) swap(b,c);
+    if(a+b<=c) cout<<"无法构成";
+    else if(a==b&&a==c&&b==c) cout<<"等边";
+	else if(a==b&&a*a+b*b==c*c) cout<<"等腰直角";
+	else if((a==b||b==c||a==c)&&a*a+b*b<c*c) cout<<"等腰钝角";
+	else if((a==b||b==c||a==c)&&a*a+b*b>c*c) cout<<"等腰锐角";
+	else if(a*a+b*b==c*c) cout<<"直角";
+	else if(a*a+b*b<c*c) cout<<"钝角";
+	else if(a*a+b*b>c*c) cout<<"锐角";
+	cout<<"三角形";
+	return 0;
+}

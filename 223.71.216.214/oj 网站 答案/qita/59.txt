@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	bool f=0;
+	int n,x,y,a,s,d;
+	cin>>n;
+	for(int i=1;i<10;i++)
+	{
+		for(int j=100;j<1000;j++)
+		{
+				 a=j%10;
+				 s=j/10%10;
+				 d=j/100;
+			if (i*j==n&&i!=a&&i!=s&&i!=d&&a!=s&&s!=d&&a!=d)
+			{
+				f=1;
+				cout<<i<<" "<<j;
+				break;
+			}
+		}
+	}
+	if(!f)
+	{
+		cout<<"no answer";
+	}
+}

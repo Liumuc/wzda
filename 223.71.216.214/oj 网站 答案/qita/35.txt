@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main( )
+{
+	double n,a;
+	cin>>n;
+	if(n<=100)
+	{
+		a=n;
+		cout<<a;
+	}
+    if(n>100||300<n)
+	{
+		a=n*0.9;
+		cout<<a;
+	}
+	if(n>300)
+	{
+		a=n*0.8;
+		cout<<a;
+	}
+	return 0;
+}

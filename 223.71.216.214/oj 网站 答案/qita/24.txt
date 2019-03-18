@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main( )
+{
+	double M1,M2,R,G,F;
+	cin>>M1>>M2>>R;
+	G=6.674e-11;
+	F=(G*M1*M2)/(R*R);
+	cout<<F<<endl;
+	return 0;
+}

@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+void pd(int n)
+{
+	cin>>n;
+	if(n*95>300)  cout<<n*95*0.85;
+	else cout<<n*95;
+}
+int main()
+{
+	int n;
+	pd(n);
+
+}

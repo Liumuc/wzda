@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int int day,month,year,sum,leap;
+int main()
+{
+	cin>>year>>month>>day;
+	switch (month〉//累加前month个月的总天数。
+	{
+		case l:sum=0;break;
+		case 2:sum=31;break;
+		case 3:sum=59;break;
+		case 4:sum=90;break;
+		case 5:sum=120;break;
+		case 6:sum=151;break;
+		case 7:sum=181;break;
+		case 8:sum=212;break;
+		case 9:sum=243;break;
+		case 10:sum=273;break;
+		case 11:sum=304;break;
+		case 12:sum=334;break;
+		default:printf("data error!");
+}
+	sum+=day;
+	if(!(year%400)||(!(year%4)&&(year%100))) leap=1;
+	else leap=0;
+ 	if(leap==1&&month>2) sum++;//闰年二月后多一天。
+	cout<<sum;
+	return 0;
+}

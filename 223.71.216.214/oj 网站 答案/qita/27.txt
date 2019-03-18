@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main( )
+{
+	int n,t,a;
+	cin>>t>>n;
+	a=n+n*t;
+	cout<<a<<endl;
+	return 0;
+}

@@ -1,0 +1,28 @@
+#include<iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+int main()
+{
+	int a;
+	cin>>a;
+	if(0<=a<=50){
+		cout<<"优";
+	}
+	else if(50<a<=100)
+   {
+   	cout<<"良";
+   }
+   else if(100<a<=150){
+   	cout<<"轻度污染";
+   }
+   else if(150<a<=200){
+   	cout<<"中度污染";
+   }
+   else if(200<a<=300){
+   	cout<<"重度污染";
+   }
+   else {
+   	cout<<"严重污染";
+   }
+}

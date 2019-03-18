@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+double x;
+int main()
+{
+	cin>>x;
+	if(x<0.3) cout<<"0";
+	else if(x<0.8) cout<<(x-0.3)/0.5;
+	else  cout<<"1";
+}

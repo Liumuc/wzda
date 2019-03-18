@@ -1,0 +1,18 @@
+//万能头文件
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	return 0;
+}
+//普通头文件
+#include<iostream>
+using namespace std;
+int main()
+{
+	return 0;
+}
+//数学函数
+#include<cmath>
+//或者
+#include<math.h>

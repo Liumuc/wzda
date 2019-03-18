@@ -1,0 +1,11 @@
+#include<bis/stdc++.h>
+using namespace std;
+int main()
+{
+	doublej x;
+	cin>>x;
+	if(int(x)!=x) x=int(x)+1;
+	if(x<=5) printf("5");
+	else if(x<=10) printf("10");
+	else cout<<(x-10)*0.5+10;
+}

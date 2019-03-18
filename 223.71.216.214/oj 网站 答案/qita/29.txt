@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+void zd(int a,int m)
+{
+	cin>>m>>a;
+	if(a<m) m=a;
+	cin>>a;
+	if(a<m) m=a;
+	cout<<m;
+}
+int main()
+{
+	int n,m;
+	zd(n,m);
+}

@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int i,n,ans=1;
+int main()
+{
+	cin>>n;
+    for(i=1;i<n;i++) ans=2*(ans+1);//循环n-1次执行公式计算。
+	cout<<ans;
+    return 0;
+}

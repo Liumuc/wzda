@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+double s1,s2,h;
+int main()
+{
+	cin>>s1>>s2>>h;
+	cout<<h*(s1+sqrt(s1*s2)+s2)/3;
+	return 0;
+}
+

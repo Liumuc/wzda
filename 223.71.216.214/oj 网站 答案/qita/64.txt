@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int i,n,ans;
+int main()
+{
+	cin>>n;
+    for(i=1;i<=n;i++) ans+=i*i;//计算i的平方然后加给ans。
+	cout<<ans;
+    return 0;
+}

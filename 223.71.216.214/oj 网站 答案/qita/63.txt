@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int n,x=1,ans;//x初始值赋为1，当做指数。
+int main()
+{
+	cin>>n;
+    while(n)//按转换公式计算。
+    {
+        ans+=n%10*x;//当前末位的x次方
+        x*=2;//指数增大。
+        n/=10;//除去刚刚的末位。
+    }
+	cout<<ans;
+    return 0;
+}

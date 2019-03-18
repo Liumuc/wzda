@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using std::cin;
+using std::cout;
+using std::endl;
+int a,b,c,x,y,z;
+int main()
+{
+    scanf("%d%d%d%d%d%d",&a,&b,&c,&x,&y,&z);
+    if(a>x) printf("First");//±ÈÖ÷°æ±¾ºÅ¡£
+    if(a<x) printf("Second");
+    if(a==x)
+    {
+        if(b>y) printf("First");
+        if(b<y) printf("Second");
+        if(b==y)
+        {
+            if(c>z) printf("First");
+            if(c==z) printf("Same");
+            if(c<z) printf("Second");
+        }
+    }
+    return 0;
+} 	

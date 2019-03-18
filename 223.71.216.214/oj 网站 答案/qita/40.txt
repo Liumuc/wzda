@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int inh, inm, ins, inp,outh, outm,outs,outp;
+int main()
+{
+	scanf("%d:%d:%d%d",&inh,&inm,&ins,&inp);
+	outh=inh*3600+inm*60+ins;//×ª»»Ê±¡¢·Ö¡¢Ãë¡£
+	outm=inp/3600;
+	outs=inp/60%60;
+	outp=inp%60;
+	cout<<outh<<endl;
+	if(outm<10) cout<<"0";
+	printf("%d:",outm);
+	if(outs<10) cout<<"0";
+	printf("%d:",outs);
+	if(outp<10) cout<<"0";
+	printf("%d",outp);
+	return 0;
+}
